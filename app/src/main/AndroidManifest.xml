@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RetrofitClass"/>
+        <activity android:name=".ListRetrofitActivity"/>
     </application>
 
 </manifest>
