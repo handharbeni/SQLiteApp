@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.mhandharbeni.lmm.sqliteapp.adapter.BookAdapter;
 import com.mhandharbeni.lmm.sqliteapp.generator.ServiceGenerator;
@@ -42,7 +44,11 @@ public class BookActivity extends AppCompatActivity {
         fetch_adapter();
 
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_book, menu);
+        return true;
+    }
 
     private void fetch_module(){
 
@@ -66,7 +72,15 @@ public class BookActivity extends AppCompatActivity {
             }
         });
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_reload) {
+            fetch_module();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     private void fetch_component(){
         listbook = findViewById(R.id.listbook);
         LinearLayoutManager llm = new LinearLayoutManager(this);
