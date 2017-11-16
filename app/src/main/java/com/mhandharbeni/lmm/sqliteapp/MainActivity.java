@@ -232,6 +232,10 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, ListRetrofitActivity.class);
             startActivity(i);
             return true;
+        }else if (id == R.id.action_book){
+            Intent i = new Intent(MainActivity.this, BookActivity.class);
+            startActivity(i);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

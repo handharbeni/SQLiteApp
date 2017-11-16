@@ -12,4 +12,9 @@
         android:orderInCategory="100"
         android:title="LIST RETROFIT ACTIVITY"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_book"
+        android:orderInCategory="100"
+        android:title="BOOK ACTIVITY"
+        app:showAsAction="never" />
 </menu>
