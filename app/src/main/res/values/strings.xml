@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLiteApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="id">ID</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="batal">BATAL</string>
+    <string name="hapus">HAPUS</string>
+    <string name="search">Search</string>
+</resources>

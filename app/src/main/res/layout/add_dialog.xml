@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name" />
+    <EditText
+        android:inputType="number"
+        android:maxLength="8"
+        android:layout_margin="@dimen/padding_dialog"
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"/>
+    <EditText
+        android:maxLength="50"
+        android:maxLines="1"
+        android:layout_margin="@dimen/padding_dialog"
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nama"/>
+    <EditText
+        android:maxLength="100"
+        android:maxLines="1"
+        android:layout_margin="@dimen/padding_dialog"
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alamat"/>
+</LinearLayout>
